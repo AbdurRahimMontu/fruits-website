@@ -13,9 +13,8 @@
     tailwind.config = {
       theme: {
         extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+          colors: {clifford: '#da373d',},
+          boxShadow:{shadow3xl: '0px 8px 60px 0px rgba(0, 0, 0, 0.05);' }
         }
       }
     }
@@ -29,7 +28,7 @@
 </head>
 <body class="w-[1280px] mx-auto font-lato">
     <nav>
-        <div class="navbar bg-base-100 h-28 bg-[#F85559;] flex justify-between items-center px-12 rounded-full">
+        <div class="navbar bg-base-100 h-28 bg-[#F85559;] flex justify-between items-center px-12 rounded-full my-12">
             <div class="flex-1 justify-start gap-10 text-white text-lg font-normal">
              <a href="#">Home</a>
              <a href="#">About Us</a>
@@ -50,8 +49,8 @@
 
 
       <main>
-        <section class="slider-section">
-            <div class="carousel w-full">
+        <section class="slider-section ">
+            <div class="carousel w-full relative -z-10">
                 <div id="slide1" class="carousel-item relative w-full" >
                     <div class="flex justify-center text-center">
                         <img src="./images/banner1.png" class="w-full bg-opacity-50" />
@@ -131,6 +130,30 @@
               </div>
         </section>
         <section>
+            <div class="fruites-container grid grid-cols-5 justify-center items-center w-[1020px] mx-auto h-52 bg-slate-100 -my-28 z-50">
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./images/fruit1.png" alt="">
+                    <p>Grapes</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./images/fruit2.png" alt="">
+                    <p>Orangey</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./images/fruit3.png" alt="">
+                    <p>Mango</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./images/fruit4.png" alt="">
+                    <p>Strawberry</p>
+                </div>
+                <div class="flex flex-col justify-center items-center">
+                    <img src="./images/fruit5.png" alt="">
+                    <p>Pomegranate</p>
+                </div>
+                
+              
+            </div>
             
         </section>
       </main>
