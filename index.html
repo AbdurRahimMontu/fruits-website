@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- daisyui css cdn link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind css cdn link  -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
         tailwind.config = {theme: {
@@ -20,30 +24,33 @@
 
     <style>
     .font-lato{font-family: 'Lato', sans-serif;}
+    .hide{display: none;}
     </style>
 </head>
 
 <body >
-   <nav class="w-[1280px] mx-auto font-lato">
-       <div class="navbar bg-base-100 h-28 bg-[#F85559;] flex justify-between items-center px-12 rounded-full my-12">
-            <div class="flex-1 justify-start gap-10 text-white text-lg font-normal">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Shop</a>
-                <a href="#">All Fruits</a>
+<!-- nav section start  -->
+<nav class="w-[1280px] mx-auto font-lato">
+       <div class="navbar bg-base-100 h-28 lg:bg-[#F85559] bg-none grid justify-center items-center lg:grid-cols-3 px-12 rounded-full my-12 gap-10  ">
+            <div class=" justify-start gap-10 text-lg font-normal order-2 lg:order-1">
+                <a class=" lg:text-white"  href="#">Home</a>
+                <a class=" lg:text-white"  href="#">About Us</a>
+                <a class=" lg:text-white"  href="#">Shop</a>
+                <a class=" lg:text-white"  href="#">All Fruits</a>
             </div>
-            <div class="flex-1 justify-center gap-3">
+            <div class=" gap-3 justify-center lg:order-1 ">
                 <a href="#"><img src="./images/logo.png" alt=""></a>
-                <a href="#" class="text-4xl font-bold text-white">Fruit Burst</a>
+                <a class=" lg:text-white text-4xl font-bold"  href="#">Fruit Burst</a>
             </div>
-            <div class="flex-1 justify-end">
+            <div class="justify-end order-2">
                 <input type="text" placeholder="Search here" class="input rounded-3xl input-bordered w-80 h-14" />
             </div>
        </div>
-   </nav>
-   
-   <main class="w-[1280px] mx-auto font-lato">
-       <section class="slider-section ">
+</nav>
+<!-- nav section end  -->
+<main class="w-[1280px] mx-auto font-lato">
+<!-- slider section start  -->
+<section class="slider-section">
             <div class="carousel w-full relative ">
                 <div id="slide1" class="carousel-item relative w-full" >
                     <div class="flex justify-center text-center">
@@ -116,12 +123,9 @@
                 </div>
               </div>
          
-        </section>
-
-
-
-<!-- five fruites section bonus part  -->
-
+</section>
+<!-- slider section end  -->
+<!-- five fruites section start  -->
 <section class="five-fruites-section">
     <div class="fruites-container grid grid-cols-5 justify-center items-center w-[1020px] mx-auto h-52 bg-slate-100 -my-28 z-40 absolute ml-32">
     <div class="flex flex-col justify-center items-center">
@@ -146,29 +150,26 @@
     </div>
     </div>
 </section>
-
 <!-- five fruites section end  -->
-
-
-
-
-<section class="">
-   <div class="mt-48">
-    <!-- deal of the day section heading  -->
-       <div class="flex ">
-           <div class="flex-1 mb-8">
-               <h2 class="text-5xl font-extrabold">Deal of the day</h2>
-               <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-           </div>
-            <div class="flex-1 text-right">
-                <pre class="text-5xl font-extrabold">29:15:25:08</pre>
-                <pre class="text-base font-medium"> Days     Hours   Minites Seconds</pre>
-           </div>
-       </div>
-    <!-- deal of the day section heading -->
-    <!-- deal of the day section description -->
+<!-- deal-of-the-day-section start -->
+<section class="deal-of-the-day-section h-[850px] mt-5">
+<div class="pt-28 ">
+    <!-- deal of the day section heading start -->
+ <div class="flex ">
+    <div class="flex-1 mb-8">
+        <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+        <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+    </div>
+    <div class="flex-1 text-right">
+        <pre class="text-5xl font-extrabold">29<img class="inline"  src="./images/Frame.png">15<img class="inline"  src="./images/Frame.png">25<img class="inline"  src="./images/Frame.png">08</pre>
+        <pre class="text-base font-medium">Days   Hours Minites Seconds</pre>
+    </div>
+</div>
+</div>
+    <!-- deal of the day section heading end -->
+    <!-- deal of the day section description start-->
         <div class="grid grid-cols-4 gap-8 text-center">
-           <div class=" flex flex-col p-14 w-72 shadow-md">
+            <div class=" flex flex-col p-14 w-72 shadow-md">
                 <img src="./images/fruit6.png" alt="" class="w-40 h-40 mb-10">
                 <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
                 <hr class="my-5">
@@ -226,14 +227,12 @@
             </div>
         </div>
     </div>
-    <div class="mt-5 text-center mb-5 text-xl font-extrabold">
+    <div class=" text-center text-xl font-extrabold mt-5 mb-2">
         <button class="py-4 px-5 bg-blue-500 text-white font-semibold ">Save changes</button>
     </div>
 </section>
-    <!-- deal of the day section description -->
-
-
-        
+<!-- deal-of-the-day-section end -->
+<!-- client section start  -->
 <section class="client-section">
     <div class=" h-[700px] bg-opacity-10 bg-no-repeat " style="background-image: url(./images/team.png); ">
         <div class="text-white text-center py-20">
@@ -284,9 +283,9 @@
         </div>
     </div>
 </section>
-
+<!-- client section end  -->
 </main>
-
+<!-- footer section start -->
 <footer class="bg-black h-[450px] pt-20">
     <div>
         <div class="flex justify-center items-center gap-3 pt-10 pb-10">
@@ -300,7 +299,6 @@
             <a href="#">All Fruits</a>
             <a href="#">Supports</a>
             <a href="#">My Account</a>
-
         </div>
         <div class="flex justify-center items-center gap-8">
             <span><i class="fa-brands fa-facebook-f bg-red-600 px-3 py-2 rounded-full"></i></span>
@@ -309,6 +307,7 @@
         </div>
     </div>
 </footer>
+<!-- footer section end  -->
 
 </body>
 </html>
