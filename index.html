@@ -48,9 +48,9 @@
        </div>
 </nav>
 <!-- nav section end  -->
-<main class="w-[1280px] mx-auto font-lato">
+<main class="lg:w-[1280px] mx-auto font-lato w-[800px] ">
 <!-- slider section start  -->
-<section class="slider-section">
+<section class="slider-section mt-36 lg:mt-0">
             <div class="carousel w-full relative ">
                 <div id="slide1" class="carousel-item relative w-full" >
                     <div class="flex justify-center text-center">
@@ -126,7 +126,7 @@
 </section>
 <!-- slider section end  -->
 <!-- five fruites section start  -->
-<section class="five-fruites-section">
+<section class="five-fruites-section lg:block hide">
     <div class="fruites-container grid grid-cols-5 justify-center items-center w-[1020px] mx-auto h-52 bg-slate-100 -my-28 z-40 absolute ml-32">
     <div class="flex flex-col justify-center items-center">
         <img src="./images/fruit1.png" alt="">
@@ -134,7 +134,7 @@
     </div>
     <div class="flex flex-col justify-center items-center">
         <img src="./images/fruit2.png" alt="">
-        <p>Orangey</p>
+        <p>Orange</p>
     </div>
     <div class="flex flex-col justify-center items-center">
         <img src="./images/fruit3.png" alt="">
@@ -152,15 +152,15 @@
 </section>
 <!-- five fruites section end  -->
 <!-- deal-of-the-day-section start -->
-<section class="deal-of-the-day-section h-[850px] mt-5">
+<section >
 <div class="pt-28 ">
     <!-- deal of the day section heading start -->
- <div class="flex ">
-    <div class="flex-1 mb-8">
+ <div class="flex flex-col lg:flex-row ">
+    <div class="flex-1 mb-8 text-center lg:text-left">
         <h2 class="text-5xl font-extrabold">Deal of the day</h2>
         <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
     </div>
-    <div class="flex-1 text-right">
+    <div class="flex-1 lg:text-right text-center ">
         <pre class="text-5xl font-extrabold">29<img class="inline"  src="./images/Frame.png">15<img class="inline"  src="./images/Frame.png">25<img class="inline"  src="./images/Frame.png">08</pre>
         <pre class="text-base font-medium">Days   Hours Minites Seconds</pre>
     </div>
@@ -168,12 +168,109 @@
 </div>
     <!-- deal of the day section heading end -->
     <!-- deal of the day section description start-->
-        <div class="grid grid-cols-4 gap-8 text-center">
-            <div class=" flex flex-col p-14 w-72 shadow-md">
-                <img src="./images/fruit6.png" alt="" class="w-40 h-40 mb-10">
+
+<div class="deal-of-the-day-section lg:h-[650px] mt-5">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 text-center md:grid-cols-2 justify-items-center">
+
+        <div class=" flex flex-col p-14 w-72  shadow-md text-center">
+            <img src="./images/fruit6.png" alt="" class=" w-40 h-40 mb-10 ">
+            <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+            <hr class="my-5">
+            <p>Apples</p>
+            <span class="my-5">
+                <i class="fa-solid fa-star text-red-600"></i>
+                <i class="fa-solid fa-star-half-stroke text-red-600"></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+            </span>
+            <!-- <a href="apples.html">Details</a> -->
+
+                <!-- Open the modal -->
+<button  onclick="my_modal_5.showModal()">Details</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box w-[800px] h-[600px] ">
+    <div class=" flex flex-col p-12 w-72  text-center mx-auto">
+    <img src="./images/fruit6.png" alt="" class=" w-40 h-40 mb-10">
+    <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+    <hr class="my-5">
+    <p>Apples</p>
+    <span class="my-5">
+        <i class="fa-solid fa-star text-red-600"></i>
+        <i class="fa-solid fa-star-half-stroke text-red-600"></i>
+        <i class="fa-solid fa-star text-red-200"></i>
+        <i class="fa-solid fa-star text-red-200"></i>
+        <i class="fa-solid fa-star text-red-200"></i>
+    </span>
+   
+    <div class="modal-action">
+<!-- close the modal -->
+      <button class="btn btn-outline">Close</button>
+      <button class="btn btn-outline bg-[#F85559] text-white">Buy Now</button>
+    </div>
+</div>
+  </form>
+</dialog>
+
+
+       </div>
+       <div class=" flex flex-col p-14 w-72 shadow-md">
+            <img src="./images/fruit7.png" alt="" class="w-40 h-40 mb-10">
+            <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+            <hr class="my-5">
+            <p>Orange</p>
+            <span class="my-5">
+                <i class="fa-solid fa-star text-red-600"></i>
+                <i class="fa-solid fa-star-half-stroke  text-red-600 "></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+            </span>
+            <button onclick="my_modal_6.showModal()">Details</button>
+<dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+  <form method="dialog" class="modal-box w-[800px] h-[600px] ">
+    <div class=" flex flex-col p-12 w-72  text-center mx-auto">
+    <img src="./images/fruit7.png" alt="" class=" w-40 h-40 mb-10">
+    <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+    <hr class="my-5">
+    <p>Orange</p>
+    <span class="my-5">
+        <i class="fa-solid fa-star text-red-600"></i>
+        <i class="fa-solid fa-star-half-stroke text-red-600"></i>
+        <i class="fa-solid fa-star text-red-200"></i>
+        <i class="fa-solid fa-star text-red-200"></i>
+        <i class="fa-solid fa-star text-red-200"></i>
+    </span>
+   
+    <div class="modal-action">
+<!-- close the modal -->
+<button class="btn btn-outline">Close</button>
+<button class="btn btn-outline bg-[#F85559] text-white">Buy Now</button>
+    </div>
+</div>
+  </form>
+</dialog>
+        </div>
+        <div class=" flex flex-col p-14 w-72 shadow-md">
+            <img src="./images/fruit8.png" alt="" class="w-40 h-40 mb-10">
+            <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+            <hr class="my-5">
+            <p>Red Dragon</p>
+            <span class="my-5">
+                <i class="fa-solid fa-star text-red-600"></i>
+                <i class="fa-solid fa-star-half-stroke  text-red-600 "></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+            </span>
+            <button  onclick="my_modal_7.showModal()">Details</button>
+            <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box w-[800px] h-[600px] ">
+                <div class=" flex flex-col p-12 w-72  text-center mx-auto">
+                <img src="./images/fruit8.png" alt="" class=" w-40 h-40 mb-10">
                 <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
                 <hr class="my-5">
-                <p>Apples</p>
+                <p>Red Dragon</p>
                 <span class="my-5">
                     <i class="fa-solid fa-star text-red-600"></i>
                     <i class="fa-solid fa-star-half-stroke text-red-600"></i>
@@ -181,55 +278,62 @@
                     <i class="fa-solid fa-star text-red-200"></i>
                     <i class="fa-solid fa-star text-red-200"></i>
                 </span>
-                <a href="#">Details</a>
-           </div>
-           <div class=" flex flex-col p-14 w-72 shadow-md">
-                <img src="./images/fruit7.png" alt="" class="w-40 h-40 mb-10">
-                <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
-                <hr class="my-5">
-                <p>Orange</p>
-                <span class="my-5">
-                    <i class="fa-solid fa-star text-red-600"></i>
-                    <i class="fa-solid fa-star-half-stroke  text-red-600 "></i>
-                    <i class="fa-solid fa-star text-red-200"></i>
-                    <i class="fa-solid fa-star text-red-200"></i>
-                    <i class="fa-solid fa-star text-red-200"></i>
-                </span>
-                <a href="#">Details</a>
+               
+                <div class="modal-action">
+            <!-- close the modal -->
+            <button class="btn btn-outline">Close</button>
+            <button class="btn btn-outline bg-[#F85559] text-white">Buy Now</button>
+                </div>
             </div>
-            <div class=" flex flex-col p-14 w-72 shadow-md">
-                <img src="./images/fruit8.png" alt="" class="w-40 h-40 mb-10">
-                <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
-                <hr class="my-5">
-                <p>Red Dragon</p>
-                <span class="my-5">
-                    <i class="fa-solid fa-star text-red-600"></i>
-                    <i class="fa-solid fa-star-half-stroke  text-red-600 "></i>
-                    <i class="fa-solid fa-star text-red-200"></i>
-                    <i class="fa-solid fa-star text-red-200"></i>
-                    <i class="fa-solid fa-star text-red-200"></i>
-                </span>
-                <a href="#">Details</a>
-            </div>
-            <div class=" flex flex-col p-14 w-72 shadow-md">
-                <img src="./images/fruit9.png" alt="" class="w-40 h-40 mb-10">
+              </form>
+            </dialog>
+        </div>
+        <div class=" flex flex-col p-14 w-72 shadow-md">
+            <img src="./images/fruit9.png" alt="" class="w-40 h-40 mb-10">
+            <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
+            <hr class="my-5">
+            <p>Banana</p>
+            <span class="my-5">
+                <i class="fa-solid fa-star text-red-600"></i>
+                <i class="fa-solid fa-star-half-stroke  text-red-600 "></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+                <i class="fa-solid fa-star text-red-200"></i>
+            </span>
+            <button  onclick="my_modal_8.showModal()">Details</button>
+            <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+              <form method="dialog" class="modal-box w-[800px] h-[600px] ">
+                <div class=" flex flex-col p-12 w-72  text-center mx-auto">
+                <img src="./images/fruit9.png" alt="" class=" w-40 h-40 mb-10">
                 <h2 class="text-2xl font-bold">12.90$ - 18.85$</h2>
                 <hr class="my-5">
                 <p>Banana</p>
                 <span class="my-5">
                     <i class="fa-solid fa-star text-red-600"></i>
-                    <i class="fa-solid fa-star-half-stroke  text-red-600 "></i>
+                    <i class="fa-solid fa-star-half-stroke text-red-600"></i>
                     <i class="fa-solid fa-star text-red-200"></i>
                     <i class="fa-solid fa-star text-red-200"></i>
                     <i class="fa-solid fa-star text-red-200"></i>
                 </span>
-                <a href="#">Details</a>
+               
+                <div class="modal-action">
+            <!-- close the modal -->
+            <button class="btn btn-outline">Close</button>
+            <button class="btn btn-outline bg-[#F85559] text-white">Buy Now</button>
+                </div>
             </div>
+              </form>
+            </dialog>
         </div>
     </div>
+
     <div class=" text-center text-xl font-extrabold mt-5 mb-2">
         <button class="py-4 px-5 bg-blue-500 text-white font-semibold ">Save changes</button>
     </div>
+</div>
+    
+    </div>
+
 </section>
 <!-- deal-of-the-day-section end -->
 <!-- client section start  -->
@@ -239,7 +343,7 @@
             <h2 class="text-5xl font-extrabold">Meet the team section</h2>
             <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
-        <div class="text-white grid grid-cols-4 py- text-center ">
+        <div class="text-white grid lg:grid-cols-4 py- text-center grid-cols-1 md:grid-cols-2 ">
             <div class="mx-auto p-5"> 
                 <img src="./images/member1.png" alt="" class="mb-5">
                 <p class="mb-4">Awlad Hossain</p>
